@@ -1,0 +1,337 @@
+/* =========================================
+   1. VARIABLES Y BASE
+   ========================================= */
+:root {
+    --brand-blue: #0052D4;
+    --brand-cyan: #4361ee;
+    --brand-yellow: #ffbe0b;
+    --text-dark: #1d1d1f;
+    --text-light: #6e6e73;
+    --bg-light: #f8faff;
+    --white: #ffffff;
+    --glass: rgba(255, 255, 255, 0.9);
+    --shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+    --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Plus Jakarta Sans', sans-serif; 
+}
+
+html { scroll-behavior: smooth; }
+
+body { 
+    color: var(--text-dark); 
+    overflow-x: hidden; 
+    line-height: 1.6; 
+    background-color: var(--white); 
+}
+
+/* =========================================
+   2. SISTEMA DE BLOQUES Y FONDOS
+   ========================================= */
+section { 
+    padding: 100px 0; 
+    position: relative; 
+    border-bottom: 1px solid rgba(0,0,0,0.03); 
+}
+
+.bg-tech {
+    background-color: var(--bg-light);
+    background-image: 
+        radial-gradient(var(--brand-cyan) 0.5px, transparent 0.5px), 
+        radial-gradient(var(--brand-blue) 0.5px, var(--bg-light) 0.5px);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
+}
+
+.bg-white { 
+    background-color: var(--white); 
+}
+
+.container { 
+    width: 90%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+/* =========================================
+   3. NAVEGACIÓN
+   ========================================= */
+.glass-nav {
+    position: fixed; 
+    top: 20px; 
+    width: 90%; 
+    left: 5%;
+    background: var(--glass); 
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.4); 
+    border-radius: 20px;
+    padding: 12px 30px; 
+    z-index: 1000; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.nav-content { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.logo { 
+    font-size: 1.5rem; 
+    font-weight: 800; 
+    color: var(--brand-blue); 
+}
+
+.logo span { color: var(--brand-cyan); }
+
+.nav-links a { 
+    text-decoration: none; 
+    color: var(--text-dark); 
+    margin-left: 25px; 
+    font-weight: 600; 
+    font-size: 0.9rem;
+}
+
+.btn-glass { 
+    background: var(--brand-blue); 
+    color: white !important; 
+    padding: 10px 22px; 
+    border-radius: 12px; 
+    transition: var(--transition);
+}
+
+/* =========================================
+   4. HERO SECTION Y MARCO PRINCIPAL
+   ========================================= */
+.hero { 
+    padding: clamp(150px, 15%, 200px) 0 120px; 
+    background: linear-gradient(180deg, #f0f4ff 0%, #ffffff 100%);
+}
+
+.grid-2 { 
+    display: grid; 
+    grid-template-columns: 1.2fr 0.8fr; 
+    gap: 5%; 
+    align-items: center; 
+}
+
+.hero-text h1 { 
+    font-size: clamp(2.2rem, 5vw, 3.8rem); 
+    line-height: 1.1; 
+    margin: 20px 0; 
+    font-weight: 800; 
+}
+
+.text-gradient { 
+    background: linear-gradient(90deg, var(--brand-blue), var(--brand-cyan)); 
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
+
+.badge-new { 
+    background: #e0e7ff; 
+    color: var(--brand-blue); 
+    padding: 8px 16px; 
+    border-radius: 100px; 
+    font-size: 14px; 
+    font-weight: 700; 
+}
+
+.cta-group { 
+    display: flex; 
+    gap: 20px; 
+    margin-top: 35px; 
+}
+
+.btn-main { 
+    background: var(--brand-blue); 
+    color: white; 
+    padding: 16px 35px; 
+    border-radius: 15px; 
+    font-weight: 700; 
+    border: none; 
+    cursor: pointer; 
+    transition: var(--transition); 
+}
+
+.btn-main:hover { 
+    transform: translateY(-5px); 
+    box-shadow: 0 15px 30px rgba(0, 82, 212, 0.3); 
+}
+
+/* CORRECCIÓN MARCO HERO */
+.phone-frame {
+    width: 90%; 
+    max-width: 320px; 
+    aspect-ratio: 9/19;
+    background: #fff; 
+    border-radius: 3rem; 
+    border: 12px solid #1a1a1a;
+    position: relative; 
+    overflow: hidden; 
+    margin: 0 auto; 
+    box-shadow: 0 40px 80px rgba(0,0,0,0.15);
+    transition: var(--transition);
+}
+
+.app-screenshot { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain; /* Cambio clave: no estira ni corta */
+    object-position: top;
+    background: #fff;
+}
+
+/* =========================================
+   5. CARACTERÍSTICAS (BLOQUES Y MARCOS)
+   ========================================= */
+.section-title { 
+    text-align: center; 
+    font-size: clamp(1.8rem, 4vw, 2.5rem); 
+    font-weight: 800; 
+    margin-bottom: 80px; 
+}
+
+.feature-item { 
+    display: flex; 
+    align-items: center; 
+    gap: 8%; 
+    margin-bottom: 80px; 
+    background: var(--white); 
+    padding: 60px; 
+    border-radius: 35px;
+    box-shadow: var(--shadow); 
+    border: 1px solid rgba(0,0,0,0.02);
+    transition: var(--transition);
+}
+
+.feature-item.reverse { flex-direction: row-reverse; }
+
+.feature-number { 
+    font-size: 4rem; 
+    font-weight: 800; 
+    color: rgba(0, 82, 212, 0.08); 
+    margin-bottom: -20px; 
+    display: block; 
+}
+
+.feature-content h3 { 
+    font-size: 1.8rem; 
+    color: var(--brand-blue); 
+    margin-bottom: 15px; 
+}
+
+/* CORRECCIÓN MARCO PEQUEÑO */
+.phone-frame-small {
+    width: 100%; 
+    max-width: 260px; 
+    aspect-ratio: 9/18;
+    background: #fff; 
+    border-radius: 2.5rem; 
+    border: 10px solid #1a1a1a;
+    overflow: hidden; 
+    transition: var(--transition);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.phone-frame-small img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Cambio clave: asegura que la interfaz se lea bien */
+    background: #fff;
+}
+
+.feature-item:hover .phone-frame-small { 
+    transform: scale(1.02) translateY(-10px); 
+}
+
+/* =========================================
+   6. PLANES DE PRECIOS
+   ========================================= */
+.pricing-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); 
+    gap: 30px; 
+}
+
+.p-card { 
+    background: var(--white); 
+    padding: 50px 30px; 
+    border-radius: 28px; 
+    border: 1px solid #edf2f7; 
+    text-align: center; 
+    transition: var(--transition);
+    position: relative;
+}
+
+.p-card.featured { 
+    background: var(--brand-blue); 
+    color: white; 
+    border: none; 
+    transform: scale(1.05);
+}
+
+.price { 
+    font-size: 2.2rem; 
+    font-weight: 800; 
+    color: var(--brand-blue); 
+    margin: 20px 0; 
+}
+
+.p-card.featured .price { color: white; }
+
+.p-card ul { 
+    list-style: none; 
+    text-align: left; 
+    margin-top: 25px; 
+}
+
+.p-card ul li { 
+    margin-bottom: 14px; 
+    display: flex; 
+    align-items: center; 
+    gap: 12px; 
+    font-size: 0.95rem; 
+}
+
+.pop-tag {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--brand-yellow);
+    color: #000;
+    padding: 6px 20px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+/* =========================================
+   7. FOOTER Y RESPONSIVIDAD
+   ========================================= */
+.contact-info { 
+    background: #0f172a; 
+    color: white; 
+    padding: 60px 0; 
+    text-align: center; 
+}
+
+@media (max-width: 768px) {
+    .grid-2 { grid-template-columns: 1fr; text-align: center; }
+    .feature-item, .feature-item.reverse { 
+        flex-direction: column; 
+        text-align: center; 
+        padding: 40px 25px; 
+    }
+    .phone-frame-small, .phone-frame { 
+        width: 75%; 
+        margin-top: 40px; 
+    }
+}
