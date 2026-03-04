@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>SIGA Mobile | Starsoft</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -11,10 +11,14 @@
 </head>
 <body>
 
-    <nav class="glass-nav">
-        <div class="container nav-content">
-            <div class="logo">SIGA<span>MOBILE</span></div>
+    <nav class="glass-nav" id="navbar">
+        <div class="nav-content"> 
+            <div class="logo">
+                <img src="logo.png" alt="Logo SIGA" class="nav-logo">
+                SIGA<span>MOBILE</span>
+            </div>
             <div class="nav-links">
+                <a href="https://starsoft.com.py/v4/" target="_blank" style="color: var(--brand-blue); font-weight: 800;">Ir a Starsoft</a>
                 <a href="#features">Características</a>
                 <a href="#pricing">Planes</a>
                 <a href="#contact" class="btn-glass">Contactar</a>
@@ -23,20 +27,52 @@
     </nav>
 
     <section class="hero tech-flow">
-        <div class="tech-grid-overlay"></div>
+        <div class="mesh-container">
+            <div class="mesh-ball ball-1"></div>
+            <div class="mesh-ball ball-2"></div>
+            <div class="mesh-ball ball-3"></div>
+        </div>
+
         <div class="container grid-2">
             <div class="hero-text">
                 <span class="badge-new">Innovación en Ventas</span>
                 <h1>Ahora, estar más cerca del <span class="text-gradient">cliente es posible.</span></h1>
-                <p>Tu solución integral para la gestión de preventas, facturación y cobranzas, integrada perfectamente con los sistemas de STARSOFT S.R.L.</p>
+                <p>SIGA MOBILE es la plataforma líder diseñada para transformar la gestión comercial en campo. Una solución robusta que integra preventas, facturación y cobranzas en tiempo real con el ecosistema de STARSOFT S.R.L.</p>
                 <div class="cta-group">
                     <button class="btn-main">Solicitar Presupuesto</button>
-                    <button class="btn-link"><i data-lucide="play-circle"></i> Ver Demo</button>
+                    <a href="#demo-section" class="btn-secondary">
+                        <i data-lucide="play-circle"></i> Ver Demo
+                    </a>
                 </div>
             </div>
             <div class="hero-visual">
                 <div class="phone-frame">
-                    <img src="Screenshot_20241210_134056.jpg" alt="SIGA Mobile Interface" class="app-screenshot">
+                    <img src="Screenshot_20241210_134056.jpg" alt="SIGA Mobile" class="app-screenshot">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="demo-section" class="bg-light">
+        <div class="container">
+            <div class="video-wrapper">
+                <div class="video-header">
+                    <h2 class="section-title" style="margin-bottom: 30px;">Mira SIGA Mobile en acción</h2>
+                    <p style="text-align: center; color: var(--text-light); max-width: 700px; margin: 0 auto 50px;">
+                        Descubre cómo nuestra interfaz intuitiva facilita el trabajo diario de tu fuerza de ventas.
+                    </p>
+                </div>
+                
+                <div class="glass-video-card">
+                    <div class="video-responsive">
+                        <iframe 
+                            src="https://www.youtube.com/embed/yPInkASyVds" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
                 </div>
             </div>
         </div>
@@ -50,10 +86,10 @@
                 <div class="feature-content">
                     <span class="feature-number">01</span>
                     <h3>Emisión de Facturas de Venta</h3>
-                    <p>Emite facturas de manera eficiente y sincroniza automáticamente con los sistemas de STARSOFT.</p>
+                    <p>Optimiza tus ventas emitiendo facturas legales de forma instantánea desde cualquier ubicación. El sistema garantiza una sincronización automática con los servidores centrales de STARSOFT, manteniendo el control de stock y contabilidad al día. Además, ofrece la flexibilidad de imprimir comprobantes vía Bluetooth o enviarlos digitalmente por correo electrónico en formato PDF con un solo toque.</p>
                 </div>
                 <div class="feature-mobile">
-                    <div class="phone-frame-small">
+                    <div class="phone-frame-small phone-animated">
                         <img src="Facturas.jpg" alt="Módulo Facturación">
                     </div>
                 </div>
@@ -62,11 +98,11 @@
             <div class="feature-item reverse">
                 <div class="feature-content">
                     <span class="feature-number">02</span>
-                    <h3>Toma de Pedidos o Presupuestos</h3>
-                    <p>Simplifica la gestión de pedidos y la emisión de presupuestos con envíos directos por email.</p>
+                    <h3>Toma de Pedidos y Presupuestos</h3>
+                    <p>Agiliza el ciclo de venta permitiendo a tus representantes cargar pedidos directamente frente al cliente. Gestiona presupuestos detallados con precios actualizados y disponibilidad de productos en tiempo real. Al finalizar, el cliente recibe una copia profesional de su orden por email, eliminando errores manuales y acelerando el proceso de despacho en el depósito central.</p>
                 </div>
                 <div class="feature-mobile">
-                    <div class="phone-frame-small">
+                    <div class="phone-frame-small phone-animated">
                         <img src="Pedidos.jpg" alt="Módulo Pedidos">
                     </div>
                 </div>
@@ -75,12 +111,38 @@
             <div class="feature-item">
                 <div class="feature-content">
                     <span class="feature-number">03</span>
-                    <h3>Cobranza en Línea</h3>
-                    <p>Gestiona deudas y emite recibos cancelatorios al instante para una cobranza eficiente.</p>
+                    <h3>Cobranza en Línea Eficiente</h3>
+                    <p>Mejora el flujo de caja de tu empresa mediante una gestión de cobranzas inteligente. Tus cobradores pueden visualizar el estado de cuenta actualizado de cada cliente, aplicar pagos a facturas específicas y registrar cobros parciales. El sistema valida cada transacción de forma segura, permitiendo una rendición de cuentas inmediata y transparente al finalizar la jornada laboral.</p>
                 </div>
                 <div class="feature-mobile">
-                    <div class="phone-frame-small">
-                        <img src="CobranzaLinea.jpg" alt="Módulo Cobranzas">
+                    <div class="phone-frame-small phone-animated">
+                        <img src="CobranzaLinea.jpg" alt="Módulo Cobranza">
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-item reverse">
+                <div class="feature-content">
+                    <span class="feature-number">04</span>
+                    <h3>Recibos Cancelatorios Preaprobados</h3>
+                    <p>Garantiza la validez legal de cada cobro mediante la emisión de recibos preaprobados y configurados desde los sistemas de STARSOFT. Esta funcionalidad asegura que cada ingreso de dinero esté debidamente documentado y vinculado a la cuenta corriente del cliente. Los recibos pueden ser impresos en el sitio o enviados por correo electrónico como respaldo oficial de la operación.</p>
+                </div>
+                <div class="feature-mobile">
+                    <div class="phone-frame-small phone-animated">
+                        <img src="CobranzaRecibo.jpg" alt="Módulo Recibos">
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-content">
+                    <span class="feature-number">05</span>
+                    <h3>Optimización con Rutas del Día</h3>
+                    <p>Maximiza la productividad de tu equipo de campo con nuestra agenda inteligente. El módulo "Rutas del Día" organiza las visitas de manera lógica, permitiendo que los vendedores cubran sus zonas con mayor eficiencia. Incluye geolocalización de clientes y registro de actividades, lo que permite a la gerencia supervisar el cumplimiento de los objetivos comerciales diarios en tiempo real.</p>
+                </div>
+                <div class="feature-mobile">
+                    <div class="phone-frame-small phone-animated">
+                        <img src="RutaDia.jpg" alt="Módulo Rutas">
                     </div>
                 </div>
             </div>
@@ -129,9 +191,10 @@
                     </ul>
                 </div>
             </div>
+
             <div class="footer-notes">
-                <p>*Cada plan incluye un SIGA CONTROL con un administrador por empresa.</p>
-                <p><strong>Pago adicional por usuario:</strong> Gs. 50.000.</p>
+                <p><strong>*POR CADA PLAN INCLUYE UN SIGA CONTROL CON UN ADMINISTRADOR POR EMPRESA</strong></p>
+                <p><strong>PAGO MENSUAL ADICIONAL POR CADA USUARIO:</strong> Gs. 50.000</p>
             </div>
         </div>
     </section>
@@ -145,7 +208,35 @@
 
     <script>
         lucide.createIcons();
+        ScrollReveal().reveal('.glass-video-card', { 
+            delay: 300, 
+            distance: '50px', 
+            origin: 'bottom',
+            duration: 1000 
+        });
         ScrollReveal().reveal('.feature-item', { interval: 200, distance: '40px', origin: 'bottom' });
+
+        // EFECTO PARALLAX SUTIL PARA EL MESH
+        document.addEventListener('mousemove', (e) => {
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+            const mesh = document.querySelector('.mesh-container');
+            if(mesh) {
+                mesh.style.transform = `translate(${x * 25}px, ${y * 25}px)`;
+            }
+        });
+
+        let lastScrollTop = 0;
+        const navbar = document.getElementById("navbar");
+        window.addEventListener("scroll", function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+                navbar.style.transform = "translateY(-150%)";
+            } else {
+                navbar.style.transform = "translateY(0)";
+            }
+            lastScrollTop = scrollTop;
+        });
     </script>
 </body>
 </html>
