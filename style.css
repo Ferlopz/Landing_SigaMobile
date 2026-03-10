@@ -961,22 +961,32 @@ section {
     margin-bottom: 15px;
 }
 
-/* Estilos para que el modal funcione */
+/* Bloqueo estricto del scroll */
+body.modal-open {
+    overflow: hidden !important;
+    height: 100vh !important;
+}
+
+/* Cuando el modal está abierto, pausamos todas las animaciones de la sección */
+body.modal-open .stack-card {
+    animation-play-state: paused !important;
+}
+
+/* Estilos base del modal para que no parpadee */
 .custom-modal {
-    display: none; /* Oculto por defecto */
+    display: none;
     position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(8px);
     z-index: 9999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.9);
     align-items: center;
     justify-content: center;
+    padding: 20px;
 }
 
 .custom-modal.open {
-    display: flex; /* Se muestra al hacer clic */
+    display: flex;
 }
 
 .modal-content {
@@ -994,10 +1004,10 @@ section {
     cursor: pointer;
 }
 
-body.modal-open {
-    overflow: hidden;
+.custom-modal.open ~ .siga-control-section .stack-card {
+    animation-play-state: paused;
 }
 
-.custom-modal.open ~ .siga-control-section .stack-card {
+.active-animation.modal-open-stack .stack-card {
     animation-play-state: paused;
 }

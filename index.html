@@ -378,6 +378,11 @@
         const modalImg = document.getElementById("imgFull");
         const closeBtn = document.querySelector(".modal-close");
 
+        const closeModal = () => {
+            modal.classList.remove("open");
+            document.body.classList.remove("modal-open");
+        };
+
         document.querySelectorAll('.stack-card').forEach(card => {
             card.addEventListener('click', () => {
                 const src = card.querySelector('img').src;
@@ -387,21 +392,19 @@
             });
         });
 
-        if(closeBtn) {
-            closeBtn.onclick = () => {
-                modal.classList.remove("open");
-                document.body.classList.remove("modal-open");
-            };
-        }
-            
+        // Eventos de cierre
+        if(closeBtn) closeBtn.onclick = closeModal;
+        
         if(modal) {
             modal.onclick = (e) => {
-                if (e.target === modal) {
-                    modal.classList.remove("open");
-                    document.body.classList.remove("modal-open"); // LIBERA SCROLL
-                }
+                if (e.target === modal) closeModal();
             };
         }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === "Escape") closeModal();
+        });
+
         // -------------------------------------------------------------
 
         document.querySelectorAll('.feature-card-modern').forEach(card => {
