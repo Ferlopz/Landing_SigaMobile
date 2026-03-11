@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>SIGA Mobile | Starsoft</title>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;800&display=swap" rel="stylesheet">
+    <!-- MEJORA: Eliminado user-scalable=no (accesibilidad WCAG 2.1) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGA Mobile | Starsoft — Gestión Comercial en Campo</title>
+    <meta name="description"
+        content="SIGA Mobile es la plataforma líder para fuerza de ventas en campo. Preventas, facturación y cobranzas en tiempo real, integrado con STARSOFT.">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <nav class="glass-nav" id="navbar">
@@ -24,13 +30,18 @@
             </button>
 
             <div class="nav-links" id="navLinks">
-                <a href="https://starsoft.com.py/v4/" target="_blank" style="color: var(--brand-blue); font-weight: 800;">Ir a Starsoft</a>
+                <a href="https://starsoft.com.py/v4/" target="_blank"
+                    style="color: var(--brand-blue); font-weight: 800;">Ir a Starsoft</a>
                 <a href="#features">Características</a>
                 <a href="#pricing">Planes</a>
+                <a href="#faq">Preguntas frecuentes</a>
             </div>
         </div>
     </nav>
 
+    <!-- ============================================================
+         HERO — MEJORADO: H1 orientado a beneficio, subtítulo conciso
+    ============================================================ -->
     <section class="hero tech-flow">
         <div class="mesh-container">
             <div class="mesh-ball ball-1"></div>
@@ -40,11 +51,15 @@
 
         <div class="container grid-2">
             <div class="hero-text">
-                <span class="badge-new">Innovación en Ventas</span>
-                <h1>Ahora, estar más cerca del <span class="text-gradient">cliente es posible.</span></h1>
-                <p>SIGA MOBILE es la plataforma líder diseñada para transformar la gestión comercial en campo. Una solución robusta que integra preventas, facturación y cobranzas en tiempo real con el ecosistema de STARSOFT S.R.L.</p>
+                <!-- MEJORA: Badge con dato concreto -->
+                <span class="badge-new">+200 usuarios activos en Paraguay</span>
+                <!-- MEJORA: H1 claro, orientado al beneficio principal -->
+                <h1>Tu fuerza de ventas en campo, <span class="text-gradient">controlada en tiempo real.</span></h1>
+                <!-- MEJORA: Subtítulo conciso, 2 líneas, feature-focused -->
+                <p>Gestioná preventas, cobranzas y facturación desde el celular. Sincronizado automáticamente con
+                    STARSOFT S.R.L., sin demoras.</p>
                 <div class="cta-group">
-                    <a href="https://wa.me/595976800962?text=Hola%20Starsoft%2C%20quiero%20solicitar%20presupuesto%20para%20SIGA%20Mobile."
+                    <a href="https://wa.me/595976800962?text=Hola%2C%20%20Estoy%20interesado%20en%20conocer%20m%C3%A1s%20sobre%20SIGA%20Mobile.%20%C2%BFPodr%C3%ADan%20brindarme%20informaci%C3%B3n%20y%20un%20presupuesto%20del%20sistema%3F%20Muchas%20gracias."
                         target="_blank" rel="noopener">
                         <button class="btn-main">Solicitar Presupuesto</button>
                     </a>
@@ -52,32 +67,70 @@
                         <i data-lucide="play-circle"></i> Ver Demo
                     </a>
                 </div>
+                <!-- Risk reversal -->
+                <p class="hero-trust-note"><i data-lucide="shield-check"></i> Sin permanencia · Soporte técnico incluido
+                    · Activación inmediata</p>
             </div>
             <div class="hero-visual">
                 <div class="person-wrapper float-animation">
-                    <img src="Principal.png" alt="SIGA Mobile" class="hero-person-img">
+                    <img src="Principal.webp" alt="SIGA Mobile — Gestión comercial en campo" class="hero-person-img">
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ============================================================
+         SOCIAL PROOF — NUEVO: Números y estadísticas clave
+    ============================================================ -->
+    <section class="social-proof-section">
+        <div class="container">
+            <div class="stats-row">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="200" data-prefix="+">0</span>
+                    <span class="stat-label">Usuarios activos</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="20" data-suffix="+">0</span>
+                    <span class="stat-label">Años de trayectoria</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="99" data-suffix=".9%">0</span>
+                    <span class="stat-label">Disponibilidad total</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="100" data-suffix="%">0</span>
+                    <span class="stat-label">Respaldo técnico</span>
+                </div>
+            </div>
+            <div class="industry-tags">
+                <span>✓ Distribuidoras</span>
+                <span>✓ Farmacéuticas</span>
+                <span>✓ Comerciales</span>
+                <span>✓ Empresas de servicios</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIDEO DEMO -->
     <section id="demo-section" class="bg-light">
         <div class="container">
             <div class="video-wrapper">
                 <div class="video-header">
-                    <h2 class="section-title" style="margin-bottom: 30px;">Mira SIGA Mobile en acción</h2>
+                    <h2 class="section-title" style="margin-bottom: 30px;">Mirá SIGA Mobile en acción</h2>
                     <p style="text-align: center; color: var(--text-light); max-width: 700px; margin: 0 auto 50px;">
-                        Descubre cómo nuestra interfaz intuitiva facilita el trabajo diario de tu fuerza de ventas.
+                        Descubrí cómo nuestra interfaz intuitiva transforma el trabajo diario de tu equipo de ventas en
+                        campo.
                     </p>
                 </div>
-                
+
                 <div class="glass-video-card">
                     <div class="video-responsive">
-                        <iframe 
-                            src="https://www.youtube.com/embed/yPInkASyVds" 
-                            title="YouTube video player" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        <iframe src="https://www.youtube.com/embed/yPInkASyVds"
+                            title="Demo SIGA Mobile — Gestión comercial en campo" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen>
                         </iframe>
                     </div>
@@ -86,24 +139,31 @@
         </div>
     </section>
 
+    <!-- CARACTERÍSTICAS -->
     <section id="features" class="features-carousel-section">
         <div class="container">
             <h2 class="section-title">Características Principales</h2>
-            
+
             <div class="swiper swiper-features">
                 <div class="swiper-wrapper">
-                    
+
                     <div class="swiper-slide">
                         <div class="feature-card-modern">
                             <div class="feature-content">
                                 <span class="feature-number">01</span>
                                 <h3>Emisión de Facturas</h3>
-                                <p>Optimiza tus ventas emitiendo facturas legales de forma instantánea. Sincronización automática con STARSOFT y envío digital en un toque.</p>
+                                <p>Emitís facturas legales al instante frente al cliente. Sincronización automática con
+                                    STARSOFT y envío digital sin papeles.</p>
+                                <ul class="feature-bullets">
+                                    <li><i data-lucide="check-circle"></i> Facturación electrónica integrada</li>
+                                    <li><i data-lucide="check-circle"></i> Envío por email o WhatsApp</li>
+                                    <li><i data-lucide="check-circle"></i> Sincronización automática</li>
+                                </ul>
                             </div>
                             <div class="feature-mobile">
                                 <div class="phone-animated phone-frame">
                                     <div class="phone-notch"></div>
-                                    <img src="Facturas.png" alt="Facturación">
+                                    <img src="Facturas.webp" alt="Facturación móvil">
                                     <div class="phone-btn volume"></div>
                                     <div class="phone-btn power"></div>
                                 </div>
@@ -116,12 +176,18 @@
                             <div class="feature-content">
                                 <span class="feature-number">02</span>
                                 <h3>Toma de Pedidos</h3>
-                                <p>Carga pedidos frente al cliente con precios y stock real. Agiliza el despacho y elimina errores manuales de inmediato.</p>
+                                <p>Cargá pedidos frente al cliente con precios y stock en tiempo real. Eliminá errores
+                                    manuales y agilizá el despacho desde el primer momento.</p>
+                                <ul class="feature-bullets">
+                                    <li><i data-lucide="check-circle"></i> Stock en tiempo real</li>
+                                    <li><i data-lucide="check-circle"></i> Precios actualizados al instante</li>
+                                    <li><i data-lucide="check-circle"></i> Cero errores de transcripción</li>
+                                </ul>
                             </div>
                             <div class="feature-mobile">
                                 <div class="phone-animated phone-frame">
                                     <div class="phone-notch"></div>
-                                    <img src="Pedidos.jpg" alt="Pedidos">
+                                    <img src="Pedidos.webp" alt="Toma de pedidos">
                                     <div class="phone-btn volume"></div>
                                     <div class="phone-btn power"></div>
                                 </div>
@@ -134,12 +200,18 @@
                             <div class="feature-content">
                                 <span class="feature-number">03</span>
                                 <h3>Cobranza en Línea</h3>
-                                <p>Visualiza estados de cuenta actualizados y registra cobros parciales con seguridad y total transparencia.</p>
+                                <p>Tus usuarios ven lo que deben cobrar antes de llegar al cliente. Registrá cobros
+                                    parciales con total seguridad y transparencia.</p>
+                                <ul class="feature-bullets">
+                                    <li><i data-lucide="check-circle"></i> Saldo actualizado al instante</li>
+                                    <li><i data-lucide="check-circle"></i> Cobros parciales y totales</li>
+                                    <li><i data-lucide="check-circle"></i> Historial completo de pagos</li>
+                                </ul>
                             </div>
                             <div class="feature-mobile">
                                 <div class="phone-animated phone-frame">
                                     <div class="phone-notch"></div>
-                                    <img src="CobranzaLinea.jpg" alt="Cobranza">
+                                    <img src="CobranzaLinea.webp" alt="Cobranza online">
                                     <div class="phone-btn volume"></div>
                                     <div class="phone-btn power"></div>
                                 </div>
@@ -152,12 +224,18 @@
                             <div class="feature-content">
                                 <span class="feature-number">04</span>
                                 <h3>Recibos Oficiales</h3>
-                                <p>Emisión de recibos preaprobados vinculados a la cuenta corriente del cliente, listos para imprimir o enviar por email.</p>
+                                <p>Emitís recibos preaprobados vinculados a la cuenta corriente de cada cliente, listos
+                                    para imprimir o enviar por email en segundos.</p>
+                                <ul class="feature-bullets">
+                                    <li><i data-lucide="check-circle"></i> Preaprobados y seguros</li>
+                                    <li><i data-lucide="check-circle"></i> Vinculados a cuenta corriente</li>
+                                    <li><i data-lucide="check-circle"></i> Impresión o envío digital</li>
+                                </ul>
                             </div>
                             <div class="feature-mobile">
                                 <div class="phone-animated phone-frame">
                                     <div class="phone-notch"></div>
-                                    <img src="CobranzaRecibo.jpg" alt="Recibos">
+                                    <img src="CobranzaRecibo.webp" alt="Recibos oficiales">
                                     <div class="phone-btn volume"></div>
                                     <div class="phone-btn power"></div>
                                 </div>
@@ -170,12 +248,18 @@
                             <div class="feature-content">
                                 <span class="feature-number">05</span>
                                 <h3>Rutas del Día</h3>
-                                <p>Organiza visitas con geolocalización. Maximiza la productividad de tu equipo de campo supervisando en tiempo real.</p>
+                                <p>Organizá visitas con geolocalización y maximizá la productividad. Supervisá el equipo
+                                    de campo en tiempo real desde cualquier dispositivo.</p>
+                                <ul class="feature-bullets">
+                                    <li><i data-lucide="check-circle"></i> Geolocalización en vivo</li>
+                                    <li><i data-lucide="check-circle"></i> Supervisión remota</li>
+                                    <li><i data-lucide="check-circle"></i> Optimización de recorridos</li>
+                                </ul>
                             </div>
                             <div class="feature-mobile">
                                 <div class="phone-animated phone-frame">
                                     <div class="phone-notch"></div>
-                                    <img src="RutaDia.jpg" alt="Rutas">
+                                    <img src="RutaDia.webp" alt="Rutas del día">
                                     <div class="phone-btn volume"></div>
                                     <div class="phone-btn power"></div>
                                 </div>
@@ -191,28 +275,30 @@
         </div>
     </section>
 
+    <!-- SIGA CONTROL -->
     <section class="siga-control-section">
         <div class="container">
             <div class="control-grid-modern">
-                
+
                 <div class="stack-stage">
                     <div class="stack-card card-1">
-                        <img src="admin-siga.png" alt="SIGA Dashboard">
+                        <img src="admin-siga.webp" alt="SIGA Dashboard">
                     </div>
                     <div class="stack-card card-2">
-                        <img src="Agenda.png" alt="SIGA Agenda">
+                        <img src="Agenda.webp" alt="SIGA Agenda">
                     </div>
                     <div class="stack-card card-3">
-                        <img src="Localizacion.png" alt="SIGA Map">
+                        <img src="Localizacion.webp" alt="SIGA Map">
                     </div>
                 </div>
 
                 <div class="control-content">
                     <div class="content-header">
                         <h2>Control Total <br><span class="text-gradient">desde la Oficina</span></h2>
-                        <p>SIGA Control es el cerebro de tu operación. Monitorea en tiempo real el desempeño de tu fuerza de ventas y gestiona solicitudes al instante.</p>
+                        <p>SIGA Control es el cerebro de tu operación. Monitorea en tiempo real el desempeño de tu
+                            fuerza de ventas y gestioná solicitudes al instante.</p>
                     </div>
-                    
+
                     <div class="features-minimal-grid">
                         <div class="minimal-item">
                             <div class="m-icon"><i data-lucide="calendar"></i></div>
@@ -231,7 +317,7 @@
                         <div class="minimal-item">
                             <div class="m-icon"><i data-lucide="map-pin"></i></div>
                             <div class="m-text">
-                                <strong>Localización de vendedores</strong>
+                                <strong>Localización de usuarios</strong>
                                 <span>Controlá recorridos y actividades de campo con precisión.</span>
                             </div>
                         </div>
@@ -249,68 +335,245 @@
         </div>
     </section>
 
+    <!-- ============================================================
+         PRECIOS — MEJORADO: Feature list completa + CTA por plan
+    ============================================================ -->
     <section id="pricing" class="bg-white">
         <div class="container">
-            <h2 class="section-title">Inversión Mensual</h2>
+            <h2 class="section-title">Elegí tu Plan</h2>
+            <p class="section-subtitle">Todos los planes incluyen SIGA Control con un administrador por empresa. Sin
+                permanencia mínima.</p>
             <div class="pricing-grid">
                 <div class="p-card">
                     <span class="plan-name">PLAN BÁSICO</span>
-                    <div class="price">Gs. 550.000</div>
+                    <div class="price">Gs. 550.000<span class="price-period">/mes</span></div>
                     <ul>
                         <li><i data-lucide="users"></i> 3 Usuarios</li>
                         <li><i data-lucide="building"></i> 1 Empresa</li>
+                        <li><i data-lucide="map-pin"></i> Geolocalización de usuarios</li>
+                        <li><i data-lucide="headphones"></i> Soporte técnico</li>
                         <li><i data-lucide="check"></i> IVA Incluido</li>
                     </ul>
+                    <a href="https://wa.me/595976800962?text=Hola%2C%20Me%20interesa%20contratar%20el%20Plan%20Basico%20de%20SIGA%20Mobile.%20%C2%BFPodr%C3%ADan%20brindarme%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20activaci%C3%B3n%20y%20los%20detalles%20del%20plan%3F%20Muchas%20gracias."
+                        target="_blank" rel="noopener">
+                        <button class="btn-plan">Solicitar Plan</button>
+                    </a>
                 </div>
                 <div class="p-card featured">
-                    <span class="pop-tag">Recomendado</span>
-
+                    <span class="pop-tag">⭐ Recomendado</span>
                     <span class="plan-name">PLAN ACTIVE</span>
-
-                    <div class="price">
-                        Gs.<br>660.000
-                    </div>
-
+                    <div class="price">Gs. 660.000<span class="price-period">/mes</span></div>
                     <ul>
                         <li><i data-lucide="users"></i> 5 Usuarios por Empresa</li>
                         <li><i data-lucide="building"></i> 3 Empresas</li>
+                        <li><i data-lucide="map-pin"></i> Geolocalización de usuarios</li>
+                        <li><i data-lucide="headphones"></i> Soporte técnico</li>
                         <li><i data-lucide="check"></i> IVA Incluido</li>
                     </ul>
+                    <a href="https://wa.me/595976800962?text=Hola%2C%20Me%20interesa%20contratar%20el%20Plan%20Active%20de%20SIGA%20Mobile.%20%C2%BFPodr%C3%ADan%20brindarme%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20activaci%C3%B3n%20y%20los%20detalles%20del%20plan%3F%20Muchas%20gracias."
+                        target="_blank" rel="noopener">
+                        <button class="btn-plan btn-plan-featured">Empezar ahora →</button>
+                    </a>
                 </div>
                 <div class="p-card">
                     <span class="plan-name">PLAN FULL ACTIVE</span>
-                    <div class="price">Gs. 880.000</div>
+                    <div class="price">Gs. 880.000<span class="price-period">/mes</span></div>
                     <ul>
                         <li><i data-lucide="users"></i> 10 Usuarios por Empresa</li>
                         <li><i data-lucide="building"></i> 5 Empresas</li>
+                        <li><i data-lucide="map-pin"></i> Geolocalización de usuarios</li>
+                        <li><i data-lucide="headphones"></i> Soporte técnico</li>
                         <li><i data-lucide="check"></i> IVA Incluido</li>
                     </ul>
+                    <a href="https://wa.me/595976800962?text=Hola%2C%20Me%20interesa%20contratar%20el%20Plan%20Full%20Active%20de%20SIGA%20Mobile.%20%C2%BFPodr%C3%ADan%20brindarme%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20activaci%C3%B3n%20y%20los%20detalles%20del%20plan%3F%20Muchas%20gracias."
+                        target="_blank" rel="noopener">
+                        <button class="btn-plan">Solicitar Plan</button>
+                    </a>
                 </div>
                 <div class="p-card">
                     <span class="plan-name">PLAN FULL</span>
-                    <div class="price">Gs. 1.100.000</div>
+                    <div class="price">Gs. 1.100.000<span class="price-period">/mes</span></div>
                     <ul>
                         <li><i data-lucide="users"></i> 20 Usuarios por Empresa</li>
                         <li><i data-lucide="building"></i> 10 Empresas</li>
+                        <li><i data-lucide="map-pin"></i> Geolocalización de usuarios</li>
+                        <li><i data-lucide="headphones"></i> Soporte técnico</li>
                         <li><i data-lucide="check"></i> IVA Incluido</li>
                     </ul>
+                    <a href="https://wa.me/595976800962?text=Hola%2C%20Me%20interesa%20contratar%20el%20Plan%20Full%20de%20SIGA%20Mobile.%20%C2%BFPodr%C3%ADan%20brindarme%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20activaci%C3%B3n%20y%20los%20detalles%20del%20plan%3F%20Muchas%20gracias."
+                        target="_blank" rel="noopener">
+                        <button class="btn-plan">Solicitar Plan</button>
+                    </a>
                 </div>
             </div>
 
             <div class="footer-notes">
-                <p><strong>*POR CADA PLAN INCLUYE UN SIGA CONTROL CON UN ADMINISTRADOR POR EMPRESA</strong></p>
-                <p><strong>PAGO MENSUAL ADICIONAL POR CADA USUARIO:</strong> Gs. 50.000</p>
+                <p>* Por cada plan se incluye un SIGA Control con un administrador por empresa.</p>
+                <p>Usuarios adicionales: <strong>Gs. 50.000/mes por usuario</strong></p>
             </div>
         </div>
     </section>
 
-    <footer id="contact" class="contact-info">
+    <!-- ============================================================
+         FAQ — NUEVO: Acordeón animado con preguntas clave
+    ============================================================ -->
+    <section id="faq" class="faq-section">
         <div class="container">
-            <p><strong>STARSOFT S.R.L.</strong> | Ind. Nacional Nº 802 esq. Humaitá</p>
-            <p>Central: 021 729 0909 | www.starsoft.com.py</p>
+            <h2 class="section-title">Preguntas Frecuentes</h2>
+            <p class="section-subtitle">Todo lo que necesitás saber antes de empezar</p>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿SIGA Mobile funciona sin conexión a internet?</span>
+                        <i data-lucide="chevron-down" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>SIGA Mobile está diseñado para funcionar en entornos con conectividad variable. Las
+                            operaciones se sincronizan automáticamente cuando el dispositivo recupera conexión,
+                            garantizando que no pierdas ningún dato ni transacción.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Cómo se integra con mi sistema STARSOFT existente?</span>
+                        <i data-lucide="chevron-down" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>SIGA Mobile es un ecosistema diseñado específicamente para integrarse con STARSOFT S.R.L. La
+                            sincronización es automática y en tiempo real: pedidos, facturas, cobranzas y datos de
+                            clientes se actualizan al instante.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Qué pasa si necesito más usuarios de los incluidos en mi plan?</span>
+                        <i data-lucide="chevron-down" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Podés agregar usuarios adicionales a cualquier plan por <strong>Gs. 50.000 por
+                                usuario/mes</strong>. También podés escalar a un plan superior en cualquier momento sin
+                            penalidades ni costos de migración.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Hay período de prueba o demo gratuita?</span>
+                        <i data-lucide="chevron-down" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí. Podés solicitar una demostración personalizada directamente con nuestro equipo comercial
+                            vía WhatsApp. Te mostramos el sistema en vivo adaptado a tu rubro y te asesoramos sobre el
+                            plan más conveniente para tu operación.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Cuál es el soporte técnico incluido?</span>
+                        <i data-lucide="chevron-down" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Todos los planes incluyen soporte técnico directo con el equipo de STARSOFT. Podés
+                            contactarnos por teléfono al <strong>021 729 0909</strong> o por WhatsApp. Nuestro equipo
+                            está disponible para resolver cualquier incidencia rápidamente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         BANNER CTA FINAL — NUEVO: Llamado a la acción de cierre
+    ============================================================ -->
+    <section class="cta-final-section">
+        <div class="cta-final-bg-glow"></div>
+        <div class="container">
+            <div class="cta-final-content">
+                <span class="cta-final-badge">Empezá hoy</span>
+                <h2>¿Listo para digitalizar tu fuerza de ventas?</h2>
+                <p>Miles de usuarios en Paraguay ya gestionan su operación desde el celular. Sumate y transformá tu
+                    equipo de campo en una máquina de ventas eficiente.</p>
+                <div class="cta-final-actions">
+                    <a href="https://wa.me/595976800962?text=Hola%21%20Me%20interesa%20conocer%20m%C3%A1s%20sobre%20SIGA%20Mobile%20y%20probar%20una%20demo.%20%C2%BFCu%C3%A1les%20ser%C3%ADan%20los%20pasos%20a%20seguir%3F%20Gracias."
+                        target="_blank" rel="noopener">
+                        <button class="btn-main btn-cta-final">
+                            <i data-lucide="message-circle"></i>
+                            Solicitar Demo
+                        </button>
+                    </a>
+                    <a href="tel:0217290909" class="btn-cta-phone">
+                        <i data-lucide="phone"></i> 021 729 0909
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         FOOTER — MEJORADO: Datos completos, links, contacto
+    ============================================================ -->
+    <footer id="contact" class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="Logo.png" alt="Starsoft" class="footer-logo-img">
+                        <span>SIGA<strong>MOBILE</strong></span>
+                    </div>
+                    <p>La plataforma líder para fuerza de ventas en campo, integrada con el ecosistema STARSOFT S.R.L.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul class="footer-links">
+                        <li><a href="tel:0217290909"><i data-lucide="phone"></i> 021 729 0909</a></li>
+                        <li><a href="https://wa.me/595976800962" target="_blank" rel="noopener"><i
+                                    data-lucide="message-circle"></i> WhatsApp Ventas</a></li>
+                        <li><a href="mailto:ventas@starsoft.com.py"><i data-lucide="mail"></i>
+                                ventas@starsoft.com.py</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Navegación</h4>
+                    <ul class="footer-links">
+                        <li><a href="#features">Características</a></li>
+                        <li><a href="#pricing">Planes y Precios</a></li>
+                        <li><a href="#faq">Preguntas frecuentes</a></li>
+                        <li><a href="https://starsoft.com.py/v4/" target="_blank" rel="noopener">Sitio Starsoft</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Dirección</h4>
+                    <p class="footer-address">Ind. Nacional Nº 802 esq. Humaitá<br>Asunción, Paraguay</p>
+                    <a href="https://starsoft.com.py/v4/" target="_blank" rel="noopener" class="footer-web-btn">
+                        <i data-lucide="globe"></i> www.starsoft.com.py
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 STARSOFT S.R.L. — Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
 
+    <!-- BOTÓN SCROLL TO TOP -->
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Volver al inicio">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- CTA STICKY MOBILE -->
+    <div class="sticky-cta" id="stickyCta">
+        <a href="https://wa.me/595976800962?text=Hola%21%20Me%20interesa%20conocer%20m%C3%A1s%20sobre%20SIGA%20Mobile."
+            target="_blank" rel="noopener" aria-label="Consultar por WhatsApp">
+            <!-- Logo oficial SVG de WhatsApp -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="28" height="28" fill="white">
+                <path
+                    d="M24 4C13 4 4 13 4 24c0 3.6 1 7 2.7 9.9L4 44l10.4-2.7C17.1 43 20.5 44 24 44c11 0 20-9 20-20S35 4 24 4zm0 36c-3.1 0-6.1-.8-8.7-2.4l-.6-.4-6.2 1.6 1.6-6-.4-.6C8.8 30.1 8 27.1 8 24 8 15.2 15.2 8 24 8s16 7.2 16 16-7.2 16-16 16zm8.7-11.9c-.5-.2-2.8-1.4-3.2-1.5-.4-.2-.7-.2-1 .2-.3.5-1.2 1.5-1.4 1.8-.3.3-.5.3-1 .1-.5-.2-2-.7-3.8-2.3-1.4-1.3-2.4-2.8-2.6-3.3-.3-.5 0-.7.2-.9l.7-.8c.2-.3.3-.5.4-.8.1-.3 0-.6-.1-.8-.1-.2-1-2.5-1.4-3.4-.4-.9-.8-.8-1-.8h-.9c-.3 0-.8.1-1.2.6-.4.4-1.6 1.6-1.6 3.8s1.7 4.4 1.9 4.7c.2.3 3.3 5 7.9 7 1.1.5 2 .8 2.6 1 1.1.3 2.1.3 2.9.2.9-.1 2.8-1.1 3.2-2.2.4-1.1.4-2 .3-2.2-.2-.2-.4-.3-.9-.5z" />
+            </svg>
+        </a>
+    </div>
+
+    <!-- MODAL -->
     <div id="imageModal" class="custom-modal">
         <span class="modal-close">&times;</span>
         <img class="modal-content" id="imgFull">
@@ -319,19 +582,17 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         lucide.createIcons();
+
+        // ── NAVBAR HAMBURGUESA ──
         const menuToggle = document.getElementById("menuToggle");
         const navLinks = document.getElementById("navLinks");
-
         menuToggle.addEventListener("click", () => {
             navLinks.classList.toggle("open");
             const isOpen = navLinks.classList.contains("open");
             menuToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
-            menuToggle.innerHTML = isOpen
-                ? '<i data-lucide="x"></i>'
-                : '<i data-lucide="menu"></i>';
+            menuToggle.innerHTML = isOpen ? '<i data-lucide="x"></i>' : '<i data-lucide="menu"></i>';
             lucide.createIcons();
         });
-
         navLinks.querySelectorAll("a").forEach(link => {
             link.addEventListener("click", () => {
                 navLinks.classList.remove("open");
@@ -341,6 +602,7 @@
             });
         });
 
+        // ── SWIPER CARRUSEL ──
         const swiper = new Swiper('.swiper-features', {
             slidesPerView: 1,
             centeredSlides: true,
@@ -348,41 +610,28 @@
             loop: true,
             grabCursor: true,
             speed: 500,
-            pagination: { 
-                el: '.swiper-pagination', 
-                clickable: true,
-                dynamicBullets: true 
-            },
-            navigation: { 
-                nextEl: '.swiper-button-next', 
-                prevEl: '.swiper-button-prev' 
-            },
-            breakpoints: {
-                1024: { slidesPerView: 1.4, spaceBetween: 60 }
-            }
+            pagination: { el: '.swiper-pagination', clickable: true, dynamicBullets: true },
+            navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+            breakpoints: { 1024: { slidesPerView: 1.4, spaceBetween: 60 } }
         });
 
+        // ── SIGA CONTROL STACK OBSERVER ──
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active-animation');
-                }
+                if (entry.isIntersecting) entry.target.classList.add('active-animation');
             });
         }, { threshold: 0.2 });
-
         const section = document.querySelector('.siga-control-section');
         observer.observe(section);
 
-        // --- CAMBIO JUSTO AQUÍ: Lógica de Modal en la misma ventana ---
+        // ── MODAL DE IMÁGENES ──
         const modal = document.getElementById("imageModal");
         const modalImg = document.getElementById("imgFull");
         const closeBtn = document.querySelector(".modal-close");
-
         const closeModal = () => {
             modal.classList.remove("open");
             document.body.classList.remove("modal-open");
         };
-
         document.querySelectorAll('.stack-card').forEach(card => {
             card.addEventListener('click', () => {
                 const src = card.querySelector('img').src;
@@ -391,58 +640,93 @@
                 modalImg.src = src;
             });
         });
+        if (closeBtn) closeBtn.onclick = closeModal;
+        if (modal) modal.onclick = (e) => { if (e.target === modal) closeModal(); };
+        document.addEventListener('keydown', (e) => { if (e.key === "Escape") closeModal(); });
 
-        // Eventos de cierre
-        if(closeBtn) closeBtn.onclick = closeModal;
-        
-        if(modal) {
-            modal.onclick = (e) => {
-                if (e.target === modal) closeModal();
-            };
-        }
-
-        document.addEventListener('keydown', (e) => {
-            if (e.key === "Escape") closeModal();
-        });
-
-        // -------------------------------------------------------------
-
+        // ── 3D TILT CELULAR ──
         document.querySelectorAll('.feature-card-modern').forEach(card => {
             card.addEventListener('mousemove', (e) => {
                 const slide = card.closest('.swiper-slide');
                 if (!slide || !slide.classList.contains('swiper-slide-active')) return;
-
                 const phone = card.querySelector('.phone-animated');
                 if (!phone) return;
-
                 const rect = card.getBoundingClientRect();
                 const x = (e.clientX - rect.left) / rect.width - 0.5;
                 const y = (e.clientY - rect.top) / rect.height - 0.5;
-
                 phone.style.transform = `rotateX(${y * -15}deg) rotateY(${x * 15}deg) scale(1.05)`;
             });
-
             card.addEventListener('mouseleave', () => {
                 const phone = card.querySelector('.phone-animated');
                 if (phone) phone.style.transform = '';
             });
         });
-
         swiper.on('slideChangeTransitionStart', () => {
             document.querySelectorAll('.phone-animated').forEach(el => el.style.transform = '');
         });
 
+        // ── SCROLL REVEAL ──
         ScrollReveal().reveal('.glass-video-card', { delay: 300, distance: '50px', origin: 'bottom', duration: 1000 });
-        ScrollReveal().reveal('.container', { delay: 300, distance: '50px', origin: 'bottom', duration: 1000 });
+        ScrollReveal().reveal('.stat-item', { delay: 100, distance: '30px', origin: 'bottom', duration: 800, interval: 100 });
+        ScrollReveal().reveal('.faq-item', { delay: 100, distance: '20px', origin: 'bottom', duration: 700, interval: 80 });
+        ScrollReveal().reveal('.cta-final-content', { delay: 200, distance: '40px', origin: 'bottom', duration: 900 });
 
+        // ── COUNT-UP ANIMATION (Social Proof) ──
+        const countUpElements = document.querySelectorAll('.stat-number[data-target]');
+        const countUpObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !entry.target.dataset.animated) {
+                    entry.target.dataset.animated = 'true';
+                    const target = parseInt(entry.target.dataset.target);
+                    const prefix = entry.target.dataset.prefix || '';
+                    const suffix = entry.target.dataset.suffix || '';
+                    const duration = 1800;
+                    const start = performance.now();
+                    const update = (time) => {
+                        const elapsed = time - start;
+                        const progress = Math.min(elapsed / duration, 1);
+                        const eased = 1 - Math.pow(1 - progress, 3);
+                        entry.target.textContent = prefix + Math.floor(eased * target) + suffix;
+                        if (progress < 1) requestAnimationFrame(update);
+                    };
+                    requestAnimationFrame(update);
+                }
+            });
+        }, { threshold: 0.5 });
+        countUpElements.forEach(el => countUpObserver.observe(el));
+
+        // ── FAQ ACORDEÓN ──
+        document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const item = btn.closest('.faq-item');
+                const isOpen = item.classList.contains('open');
+                // Cierra todos
+                document.querySelectorAll('.faq-item.open').forEach(openItem => {
+                    openItem.classList.remove('open');
+                    openItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                });
+                // Abre el clickeado si estaba cerrado
+                if (!isOpen) {
+                    item.classList.add('open');
+                    btn.setAttribute('aria-expanded', 'true');
+                }
+                lucide.createIcons();
+            });
+        });
+
+        // ── NAVBAR SCROLL BEHAVIOR ──
         let lastScrollTop = 0;
         const navbar = document.getElementById("navbar");
+        const stickyCta = document.getElementById("stickyCta");
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
 
-        window.addEventListener("scroll", function() {
+        scrollTopBtn.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        window.addEventListener("scroll", function () {
             let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
             if (scrollTop > 24) {
-                navbar.style.background = "rgba(255,255,255,0.78)";
+                navbar.style.background = "rgba(255,255,255,0.88)";
                 navbar.style.boxShadow = "0 16px 40px rgba(15,23,42,0.08)";
                 navbar.style.borderColor = "rgba(15,23,42,0.08)";
             } else {
@@ -450,15 +734,26 @@
                 navbar.style.boxShadow = "0 10px 30px rgba(15,23,42,0.06)";
                 navbar.style.borderColor = "rgba(15,23,42,0.06)";
             }
-
             if (scrollTop > lastScrollTop && scrollTop > 100) {
                 navbar.style.transform = "translateY(-150%)";
             } else {
                 navbar.style.transform = "translateY(0)";
             }
-
+            // Sticky CTA mobile: mostrar después de pasar el hero
+            if (scrollTop > 500) {
+                stickyCta.classList.add('visible');
+            } else {
+                stickyCta.classList.remove('visible');
+            }
+            // Botón scroll-to-top
+            if (scrollTop > 600) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
             lastScrollTop = scrollTop;
         });
     </script>
 </body>
+
 </html>
